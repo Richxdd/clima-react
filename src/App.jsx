@@ -21,7 +21,7 @@ import Header from './components/Header'
   useEffect(()=>{
       if(consultar){
         const consultarApi = async () =>{
-          const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=9507e6da10aa32eaafea1de6246b5be5`
+          const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=9507e6da10aa32eaafea1de6246b5be5`
           const respuesta = await fetch(url)
           const resultado = await respuesta.json()
           setResultado(resultado);
